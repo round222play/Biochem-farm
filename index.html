@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مزرعة العلوم - BioChem Farm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo"><i class="fas fa-seedling"></i> <span data-ar="مزرعة العلوم" data-en="BioChem Farm">مزرعة العلوم</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا" data-en="About Us">نبذة عنا</a></li>
+                <li><a href="biology.html" data-ar="الأحياء والزراعة" data-en="Biology & Agriculture">الأحياء والزراعة</a></li>
+                <li><a href="chemistry.html" data-ar="الكيمياء والزراعة" data-en="Chemistry & Agriculture">الكيمياء والزراعة</a></li>
+                <li><a href="quiz.html" data-ar="اختبر معلوماتك" data-en="Test Your Knowledge">اختبر معلوماتك</a></li>
+            </ul>
+            <button class="lang-toggle" onclick="toggleLanguage()">
+                <i class="fas fa-globe"></i>
+                <span class="lang-text" data-ar="English" data-en="العربية">English</span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title" data-ar="مرحباً بك في مزرعة العلوم" data-en="Welcome to BioChem Farm">مرحباً بك في مزرعة العلوم</h1>
+            <p class="hero-subtitle" data-ar="حيث تلتقي الكيمياء والأحياء بالزراعة الحديثة" data-en="Where Chemistry and Biology Meet Modern Agriculture">حيث تلتقي الكيمياء والأحياء بالزراعة الحديثة</p>
+            <div class="hero-buttons">
+                <a href="biology.html" class="btn btn-primary" data-ar="استكشف الأحياء" data-en="Explore Biology">استكشف الأحياء</a>
+                <a href="chemistry.html" class="btn btn-secondary" data-ar="استكشف الكيمياء" data-en="Explore Chemistry">استكشف الكيمياء</a>
+            </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1600&q=80" alt="Agriculture Science" class="hero-image">
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title" data-ar="ماذا نقدم" data-en="What We Offer">ماذا نقدم</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                    <h3 data-ar="الكيمياء الزراعية" data-en="Agricultural Chemistry">الكيمياء الزراعية</h3>
+                    <p data-ar="اكتشف كيف تساهم الكيمياء في تحسين جودة المحاصيل وزيادة الإنتاجية" data-en="Discover how chemistry contributes to improving crop quality and increasing productivity">اكتشف كيف تساهم الكيمياء في تحسين جودة المحاصيل وزيادة الإنتاجية</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3 data-ar="علم الأحياء" data-en="Biology Science">علم الأحياء</h3>
+                    <p data-ar="تعلم عن دور الكائنات الحية والنباتات في النظام البيئي الزراعي" data-en="Learn about the role of organisms and plants in the agricultural ecosystem">تعلم عن دور الكائنات الحية والنباتات في النظام البيئي الزراعي</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+                    <h3 data-ar="البحث العلمي" data-en="Scientific Research">البحث العلمي</h3>
+                    <p data-ar="نساعدك على فهم أحدث الأبحاث والتقنيات في المجال الزراعي" data-en="We help you understand the latest research and techniques in agriculture">نساعدك على فهم أحدث الأبحاث والتقنيات في المجال الزراعي</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 data-ar="التعليم التفاعلي" data-en="Interactive Learning">التعليم التفاعلي</h3>
+                    <p data-ar="اختبر معلوماتك من خلال الألعاب والاختبارات التفاعلية الممتعة" data-en="Test your knowledge through fun interactive games and quizzes">اختبر معلوماتك من خلال الألعاب والاختبارات التفاعلية الممتعة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="stat-number" data-ar="10,000+" data-en="10,000+">10,000+</h3>
+                    <p data-ar="متعلم نشط" data-en="Active Learners">متعلم نشط</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-book-open"></i></div>
+                    <h3 class="stat-number" data-ar="50+" data-en="50+">50+</h3>
+                    <p data-ar="موضوع علمي" data-en="Scientific Topics">موضوع علمي</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                    <h3 class="stat-number" data-ar="2" data-en="2">2</h3>
+                    <p data-ar="لغتان" data-en="Languages">لغتان</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    <h3 class="stat-number" data-ar="100%" data-en="100%">100%</h3>
+                    <p data-ar="محتوى مجاني" data-en="Free Content">محتوى مجاني</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="science-showcase">
+        <div class="container">
+            <div class="showcase-grid">
+                <div class="showcase-content">
+                    <h2 data-ar="العلم والزراعة معاً" data-en="Science and Agriculture Together">العلم والزراعة معاً</h2>
+                    <p data-ar="نجمع بين علوم الأحياء والكيمياء لتقديم معلومات شاملة حول الزراعة الحديثة والتقنيات المستدامة التي تساعد في إنتاج غذاء صحي وآمن للجميع." data-en="We combine biology and chemistry to provide comprehensive information about modern agriculture and sustainable technologies that help produce healthy and safe food for everyone.">نجمع بين علوم الأحياء والكيمياء لتقديم معلومات شاملة حول الزراعة الحديثة والتقنيات المستدامة التي تساعد في إنتاج غذاء صحي وآمن للجميع.</p>
+                    <a href="about.html" class="btn btn-primary" data-ar="اعرف المزيد" data-en="Learn More">اعرف المزيد</a>
+                </div>
+                <div class="showcase-image">
+                    <img src="assets/العلم والزراعة معاً.jpg" alt="Scientific Agriculture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-section">
+        <div class="container">
+            <h2 class="section-title" data-ar="لماذا تختار مزرعة العلوم؟" data-en="Why Choose BioChem Farm?">لماذا تختار مزرعة العلوم؟</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 data-ar="محتوى علمي موثوق" data-en="Reliable Scientific Content">محتوى علمي موثوق</h3>
+                    <p data-ar="جميع المعلومات مستندة على أبحاث علمية محكّمة ومصادر موثوقة من جامعات ومراكز بحثية عالمية." data-en="All information is based on peer-reviewed scientific research and reliable sources from universities and international research centers.">جميع المعلومات مستندة على أبحاث علمية محكّمة ومصادر موثوقة من جامعات ومراكز بحثية عالمية.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-language"></i></div>
+                    <h3 data-ar="تعليم بلغتك" data-en="Learn in Your Language">تعليم بلغتك</h3>
+                    <p data-ar="نوفر المحتوى باللغتين العربية والإنجليزية لتسهيل الفهم والوصول للمعلومة بأسهل طريقة." data-en="We provide content in both Arabic and English to facilitate understanding and access to information in the easiest way.">نوفر المحتوى باللغتين العربية والإنجليزية لتسهيل الفهم والوصول للمعلومة بأسهل طريقة.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 data-ar="تعلم في أي وقت ومكان" data-en="Learn Anytime, Anywhere">تعلم في أي وقت ومكان</h3>
+                    <p data-ar="موقعنا متوافق مع جميع الأجهزة - الهاتف، التابلت، والكمبيوتر، لتتعلم وأنت في أي مكان." data-en="Our website is compatible with all devices - phone, tablet, and computer, so you can learn wherever you are.">موقعنا متوافق مع جميع الأجهزة - الهاتف، التابلت، والكمبيوتر، لتتعلم وأنت في أي مكان.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h3 data-ar="من المبتدئ للمتقدم" data-en="From Beginner to Advanced">من المبتدئ للمتقدم</h3>
+                    <p data-ar="محتوى مناسب لجميع المستويات - سواء كنت طالباً، مزارعاً، أو باحثاً في المجال الزراعي." data-en="Content suitable for all levels - whether you are a student, farmer, or researcher in the agricultural field.">محتوى مناسب لجميع المستويات - سواء كنت طالباً، مزارعاً، أو باحثاً في المجال الزراعي.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topics-preview">
+        <div class="container">
+            <h2 class="section-title" data-ar="استكشف مواضيعنا" data-en="Explore Our Topics">استكشف مواضيعنا</h2>
+            <div class="topics-preview-grid">
+                <div class="topic-preview-card">
+                    <div class="topic-number">01</div>
+                    <h3 data-ar="التربة وخصوبتها" data-en="Soil & Fertility">التربة وخصوبتها</h3>
+                    <p data-ar="تعرف على تركيب التربة وكيفية تحسين خصوبتها باستخدام الأسمدة العضوية والكيميائية." data-en="Learn about soil composition and how to improve its fertility using organic and chemical fertilizers.">تعرف على تركيب التربة وكيفية تحسين خصوبتها باستخدام الأسمدة العضوية والكيميائية.</p>
+                </div>
+                <div class="topic-preview-card">
+                    <div class="topic-number">02</div>
+                    <h3 data-ar="الآفات والأمراض" data-en="Pests & Diseases">الآفات والأمراض</h3>
+                    <p data-ar="اكتشف طرق المكافحة الحيوية والكيميائية للآفات وأمراض النباتات الشائعة." data-en="Discover biological and chemical control methods for common plant pests and diseases.">اكتشف طرق المكافحة الحيوية والكيميائية للآفات وأمراض النباتات الشائعة.</p>
+                </div>
+                <div class="topic-preview-card">
+                    <div class="topic-number">03</div>
+                    <h3 data-ar="التقنيات الحديثة" data-en="Modern Technologies">التقنيات الحديثة</h3>
+                    <p data-ar="تعلم عن الزراعة المائية، الأنسجة النباتية، والتقنيات الحيوية في الزراعة." data-en="Learn about hydroponics, plant tissue culture, and biotechnology in agriculture.">تعلم عن الزراعة المائية، الأنسجة النباتية، والتقنيات الحيوية في الزراعة.</p>
+                </div>
+                <div class="topic-preview-card">
+                    <div class="topic-number">04</div>
+                    <h3 data-ar="الزراعة المستدامة" data-en="Sustainable Agriculture">الزراعة المستدامة</h3>
+                    <p data-ar="فهم أهمية الزراعة المستدامة والطرق الصديقة للبيئة في الإنتاج الزراعي." data-en="Understand the importance of sustainable agriculture and eco-friendly methods in crop production.">فهم أهمية الزراعة المستدامة والطرق الصديقة للبيئة في الإنتاج الزراعي.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-ar="© 2025 مزرعة العلوم - BioChem Farm. جميع الحقوق محفوظة" data-en="© 2025 BioChem Farm. All Rights Reserved">© 2025 مزرعة العلوم - BioChem Farm. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

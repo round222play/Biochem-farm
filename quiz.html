@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبر معلوماتك - مزرعة العلوم</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo"><i class="fas fa-seedling"></i> <span data-ar="مزرعة العلوم" data-en="BioChem Farm">مزرعة العلوم</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا" data-en="About Us">نبذة عنا</a></li>
+                <li><a href="biology.html" data-ar="الأحياء والزراعة" data-en="Biology & Agriculture">الأحياء والزراعة</a></li>
+                <li><a href="chemistry.html" data-ar="الكيمياء والزراعة" data-en="Chemistry & Agriculture">الكيمياء والزراعة</a></li>
+                <li><a href="quiz.html" class="active" data-ar="اختبر معلوماتك" data-en="Test Your Knowledge">اختبر معلوماتك</a></li>
+            </ul>
+            <button class="lang-toggle" onclick="toggleLanguage()">
+                <i class="fas fa-globe"></i>
+                <span class="lang-text" data-ar="English" data-en="العربية">English</span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header quiz-header">
+        <div class="container">
+            <h1 data-ar="اختبر معلوماتك" data-en="Test Your Knowledge">اختبر معلوماتك</h1>
+            <p data-ar="تحدى نفسك في معلومات علم الأحياء والكيمياء الزراعية" data-en="Challenge yourself in agricultural biology and chemistry knowledge">تحدى نفسك في معلومات علم الأحياء والكيمياء الزراعية</p>
+        </div>
+    </section>
+
+    <section class="quiz-section">
+        <div class="container">
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-intro" id="quizIntro">
+                    <h2 data-ar="مرحباً بك في اختبار مزرعة العلوم!" data-en="Welcome to BioChem Farm Quiz!">مرحباً بك في اختبار مزرعة العلوم!</h2>
+                    <p data-ar="اختبر معلوماتك في علوم الأحياء والكيمياء الزراعية من خلال 5 أسئلة متنوعة" data-en="Test your knowledge in agricultural biology and chemistry through 5 diverse questions">اختبر معلوماتك في علوم الأحياء والكيمياء الزراعية من خلال 5 أسئلة متنوعة</p>
+                    
+                    <div class="quiz-tips">
+                        <h3 data-ar="نصائح قبل البدء:" data-en="Tips Before Starting:">نصائح قبل البدء:</h3>
+                        <ul>
+                            <li data-ar="اقرأ كل سؤال بعناية قبل الإجابة" data-en="Read each question carefully before answering">اقرأ كل سؤال بعناية قبل الإجابة</li>
+                            <li data-ar="لديك فرصة واحدة لكل سؤال" data-en="You have one chance for each question">لديك فرصة واحدة لكل سؤال</li>
+                            <li data-ar="ستظهر لك الإجابة الصحيحة بعد كل سؤال" data-en="The correct answer will be shown after each question">ستظهر لك الإجابة الصحيحة بعد كل سؤال</li>
+                            <li data-ar="يمكنك إعادة الاختبار عدة مرات" data-en="You can retake the quiz multiple times">يمكنك إعادة الاختبار عدة مرات</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn btn-primary start-quiz" onclick="startQuiz()" data-ar="ابدأ الاختبار" data-en="Start Quiz">ابدأ الاختبار</button>
+                </div>
+
+                <div class="quiz-content" id="quizContent" style="display: none;">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressBar"></div>
+                        </div>
+                        <p class="question-counter" id="questionCounter">1 / 5</p>
+                    </div>
+
+                    <div class="question-box">
+                        <h3 class="question-text" id="questionText"></h3>
+                        <div class="answers-list" id="answersList"></div>
+                    </div>
+
+                    <button class="btn btn-secondary next-btn" id="nextBtn" onclick="nextQuestion()" style="display: none;" data-ar="السؤال التالي" data-en="Next Question">السؤال التالي</button>
+                </div>
+
+                <div class="quiz-result" id="quizResult" style="display: none;">
+                    <div class="result-icon" id="resultIcon">🎉</div>
+                    <h2 id="resultTitle" data-ar="رائع!" data-en="Great!">رائع!</h2>
+                    <p class="result-score" id="resultScore"></p>
+                    <p class="result-message" id="resultMessage"></p>
+                    <div class="result-buttons">
+                        <button class="btn btn-primary" onclick="restartQuiz()" data-ar="إعادة الاختبار" data-en="Restart Quiz">إعادة الاختبار</button>
+                        <a href="index.html" class="btn btn-secondary" data-ar="العودة للرئيسية" data-en="Back to Home">العودة للرئيسية</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-ar="© 2025 مزرعة العلوم - BioChem Farm. جميع الحقوق محفوظة" data-en="© 2025 BioChem Farm. All Rights Reserved">© 2025 مزرعة العلوم - BioChem Farm. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

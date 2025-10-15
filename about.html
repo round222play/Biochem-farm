@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نبذة عنا - مزرعة العلوم</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo"><i class="fas fa-seedling"></i> <span data-ar="مزرعة العلوم" data-en="BioChem Farm">مزرعة العلوم</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="about.html" class="active" data-ar="نبذة عنا" data-en="About Us">نبذة عنا</a></li>
+                <li><a href="biology.html" data-ar="الأحياء والزراعة" data-en="Biology & Agriculture">الأحياء والزراعة</a></li>
+                <li><a href="chemistry.html" data-ar="الكيمياء والزراعة" data-en="Chemistry & Agriculture">الكيمياء والزراعة</a></li>
+                <li><a href="quiz.html" data-ar="اختبر معلوماتك" data-en="Test Your Knowledge">اختبر معلوماتك</a></li>
+            </ul>
+            <button class="lang-toggle" onclick="toggleLanguage()">
+                <i class="fas fa-globe"></i>
+                <span class="lang-text" data-ar="English" data-en="العربية">English</span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 data-ar="نبذة عنا" data-en="About Us">نبذة عنا</h1>
+            <p data-ar="تعرف على رؤيتنا ورسالتنا في مزرعة العلوم" data-en="Learn about our vision and mission at BioChem Farm">تعرف على رؤيتنا ورسالتنا في مزرعة العلوم</p>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/field of biochemical agriculture.jfif" alt="Our Vision">
+                </div>
+                <div class="about-text">
+                    <h2 data-ar="رؤيتنا" data-en="Our Vision">رؤيتنا</h2>
+                    <p data-ar="نسعى لأن نكون المصدر الأول للمعرفة العلمية في مجال الزراعة الحيوية والكيميائية في العالم العربي، ونهدف إلى نشر الوعي بأهمية العلوم الزراعية الحديثة." data-en="We strive to be the primary source of scientific knowledge in the field of biochemical agriculture in the Arab world, and aim to spread awareness of the importance of modern agricultural sciences.">نسعى لأن نكون المصدر الأول للمعرفة العلمية في مجال الزراعة الحيوية والكيميائية في العالم العربي، ونهدف إلى نشر الوعي بأهمية العلوم الزراعية الحديثة.</p>
+                </div>
+            </div>
+
+            <div class="about-grid reverse">
+                <div class="about-text">
+                    <h2 data-ar="رسالتنا" data-en="Our Mission">رسالتنا</h2>
+                    <p data-ar="مهمتنا هي تقديم محتوى تعليمي متميز يجمع بين علوم الأحياء والكيمياء والزراعة، وتوفير منصة تفاعلية تساعد المتعلمين على فهم العلاقة المعقدة بين العلوم الطبيعية والإنتاج الزراعي المستدام." data-en="Our mission is to provide distinguished educational content that combines biology, chemistry and agriculture, and to provide an interactive platform that helps learners understand the complex relationship between natural sciences and sustainable agricultural production.">مهمتنا هي تقديم محتوى تعليمي متميز يجمع بين علوم الأحياء والكيمياء والزراعة، وتوفير منصة تفاعلية تساعد المتعلمين على فهم العلاقة المعقدة بين العلوم الطبيعية والإنتاج الزراعي المستدام.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/منصة عن الكيمياء والاحياء للزراعة.jpg" alt="Our Mission">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="container">
+            <h2 class="section-title" data-ar="قيمنا" data-en="Our Values">قيمنا</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3 data-ar="الجودة" data-en="Quality">الجودة</h3>
+                    <p data-ar="نقدم محتوى علمي دقيق ومراجع موثوقة" data-en="We provide accurate scientific content and reliable references">نقدم محتوى علمي دقيق ومراجع موثوقة</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3 data-ar="الاستدامة" data-en="Sustainability">الاستدامة</h3>
+                    <p data-ar="نؤمن بأهمية الزراعة المستدامة للأجيال القادمة" data-en="We believe in the importance of sustainable agriculture for future generations">نؤمن بأهمية الزراعة المستدامة للأجيال القادمة</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3 data-ar="الابتكار" data-en="Innovation">الابتكار</h3>
+                    <p data-ar="نشجع على استخدام التقنيات الحديثة في الزراعة" data-en="We encourage the use of modern technologies in agriculture">نشجع على استخدام التقنيات الحديثة في الزراعة</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h3 data-ar="التعاون" data-en="Collaboration">التعاون</h3>
+                    <p data-ar="نبني جسور التواصل بين العلماء والمزارعين" data-en="We build communication bridges between scientists and farmers">نبني جسور التواصل بين العلماء والمزارعين</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title" data-ar="ما يميزنا" data-en="What Makes Us Special">ما يميزنا</h2>
+            <div class="special-grid">
+                <div class="special-item">
+                    <img src="assets/Modern Scientific.jfif" alt="Research">
+                    <h3 data-ar="أبحاث علمية حديثة" data-en="Modern Scientific Research">أبحاث علمية حديثة</h3>
+                    <p data-ar="نعتمد على أحدث الدراسات والأبحاث العلمية المعتمدة" data-en="We rely on the latest accredited scientific studies and research">نعتمد على أحدث الدراسات والأبحاث العلمية المعتمدة</p>
+                </div>
+                <div class="special-item">
+                    <img src="assets/educ1.jfif" alt="Education">
+                    <h3 data-ar="تعليم تفاعلي" data-en="Interactive Education">تعليم تفاعلي</h3>
+                    <p data-ar="نوفر طرق تعليم حديثة وتفاعلية لتسهيل الفهم" data-en="We provide modern and interactive teaching methods to facilitate understanding">نوفر طرق تعليم حديثة وتفاعلية لتسهيل الفهم</p>
+                </div>
+                <div class="special-item">
+                    <img src="assets/Integrated Scientific.jfif" alt="Community">
+                    <h3 data-ar="مجتمع علمي متكامل" data-en="Integrated Scientific Community">مجتمع علمي متكامل</h3>
+                    <p data-ar="ننشئ مجتمعاً من المهتمين بالعلوم الزراعية" data-en="We create a community of agricultural science enthusiasts">ننشئ مجتمعاً من المهتمين بالعلوم الزراعية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="journey-section">
+        <div class="container">
+            <h2 class="section-title" data-ar="رحلتنا العلمية" data-en="Our Scientific Journey">رحلتنا العلمية</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="timeline-content">
+                        <h3 data-ar="البداية" data-en="The Beginning">البداية</h3>
+                        <p data-ar="انطلقنا برؤية واضحة: جعل العلوم الزراعية متاحة للجميع بطريقة سهلة ومبسطة." data-en="We started with a clear vision: making agricultural sciences accessible to everyone in an easy and simplified way.">انطلقنا برؤية واضحة: جعل العلوم الزراعية متاحة للجميع بطريقة سهلة ومبسطة.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-users"></i></div>
+                    <div class="timeline-content">
+                        <h3 data-ar="بناء المجتمع" data-en="Building Community">بناء المجتمع</h3>
+                        <p data-ar="نجحنا في جمع آلاف المتعلمين والمهتمين بالعلوم الزراعية من مختلف الدول العربية." data-en="We succeeded in gathering thousands of learners interested in agricultural sciences from various Arab countries.">نجحنا في جمع آلاف المتعلمين والمهتمين بالعلوم الزراعية من مختلف الدول العربية.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="timeline-content">
+                        <h3 data-ar="التطور المستمر" data-en="Continuous Development">التطور المستمر</h3>
+                        <p data-ar="نواصل تحديث محتوانا بأحدث الأبحاث والتقنيات في مجال الزراعة الحيوية والكيميائية." data-en="We continue to update our content with the latest research and technologies in biochemical agriculture.">نواصل تحديث محتوانا بأحدث الأبحاث والتقنيات في مجال الزراعة الحيوية والكيميائية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="commitment-section">
+        <div class="container">
+            <h2 class="section-title" data-ar="التزامنا تجاهك" data-en="Our Commitment to You">التزامنا تجاهك</h2>
+            <div class="commitment-grid">
+                <div class="commitment-card">
+                    <i class="fas fa-check-double"></i>
+                    <h3 data-ar="دقة المعلومات" data-en="Information Accuracy">دقة المعلومات</h3>
+                    <p data-ar="نراجع كل محتوى علمي لضمان صحته ودقته قبل نشره." data-en="We review all scientific content to ensure its accuracy before publishing.">نراجع كل محتوى علمي لضمان صحته ودقته قبل نشره.</p>
+                </div>
+                <div class="commitment-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3 data-ar="التحديث المستمر" data-en="Continuous Updates">التحديث المستمر</h3>
+                    <p data-ar="نحدّث المحتوى باستمرار ليواكب آخر التطورات العلمية." data-en="We continuously update content to keep pace with the latest scientific developments.">نحدّث المحتوى باستمرار ليواكب آخر التطورات العلمية.</p>
+                </div>
+                <div class="commitment-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3 data-ar="الدعم الكامل" data-en="Full Support">الدعم الكامل</h3>
+                    <p data-ar="نسعى لتقديم أفضل تجربة تعليمية ممكنة لجميع زوارنا." data-en="We strive to provide the best possible learning experience for all our visitors.">نسعى لتقديم أفضل تجربة تعليمية ممكنة لجميع زوارنا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-ar="© 2025 مزرعة العلوم - BioChem Farm. جميع الحقوق محفوظة" data-en="© 2025 BioChem Farm. All Rights Reserved">© 2025 مزرعة العلوم - BioChem Farm. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكيمياء والزراعة - مزرعة العلوم</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo"><i class="fas fa-seedling"></i> <span data-ar="مزرعة العلوم" data-en="BioChem Farm">مزرعة العلوم</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا" data-en="About Us">نبذة عنا</a></li>
+                <li><a href="biology.html" data-ar="الأحياء والزراعة" data-en="Biology & Agriculture">الأحياء والزراعة</a></li>
+                <li><a href="chemistry.html" class="active" data-ar="الكيمياء والزراعة" data-en="Chemistry & Agriculture">الكيمياء والزراعة</a></li>
+                <li><a href="quiz.html" data-ar="اختبر معلوماتك" data-en="Test Your Knowledge">اختبر معلوماتك</a></li>
+            </ul>
+            <button class="lang-toggle" onclick="toggleLanguage()">
+                <i class="fas fa-globe"></i>
+                <span class="lang-text" data-ar="English" data-en="العربية">English</span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header chemistry-header">
+        <div class="container">
+            <h1 data-ar="الكيمياء والزراعة" data-en="Chemistry & Agriculture">الكيمياء والزراعة</h1>
+            <p data-ar="اكتشف كيف تساهم الكيمياء في تطوير الزراعة الحديثة" data-en="Discover how chemistry contributes to modern agriculture development">اكتشف كيف تساهم الكيمياء في تطوير الزراعة الحديثة</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="intro-box">
+                <h2 data-ar="الكيمياء الزراعية" data-en="Agricultural Chemistry">الكيمياء الزراعية</h2>
+                <p data-ar="الكيمياء الزراعية هي العلم الذي يدرس التفاعلات الكيميائية في التربة والنباتات. تلعب دوراً حيوياً في تحسين الإنتاج الزراعي من خلال فهم احتياجات النباتات الكيميائية وتوفير العناصر الغذائية الضرورية." data-en="Agricultural chemistry is the science that studies chemical reactions in soil and plants. It plays a vital role in improving agricultural production by understanding plants' chemical needs and providing necessary nutrients.">الكيمياء الزراعية هي العلم الذي يدرس التفاعلات الكيميائية في التربة والنباتات. تلعب دوراً حيوياً في تحسين الإنتاج الزراعي من خلال فهم احتياجات النباتات الكيميائية وتوفير العناصر الغذائية الضرورية.</p>
+            </div>
+
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <img src="assets/_كيمياء التربة.jpg" alt="Soil Chemistry">
+                    <div class="topic-content">
+                        <h3><i class="fas fa-vial"></i> <span data-ar="كيمياء التربة" data-en="Soil Chemistry">كيمياء التربة</span></h3>
+                        <p data-ar="دراسة التركيب الكيميائي للتربة ودرجة حموضتها (pH). فهم كيمياء التربة يساعد في تحديد العناصر الغذائية المتاحة للنباتات وكيفية تحسين خصوبة التربة." data-en="Study of soil chemical composition and pH. Understanding soil chemistry helps determine nutrients available to plants and how to improve soil fertility.">دراسة التركيب الكيميائي للتربة ودرجة حموضتها (pH). فهم كيمياء التربة يساعد في تحديد العناصر الغذائية المتاحة للنباتات وكيفية تحسين خصوبة التربة.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <img src="assets/الأسمدة الكيميائية للنبات.jpg" alt="Fertilizers">
+                    <div class="topic-content">
+                        <h3><i class="fas fa-seedling"></i> <span data-ar="الأسمدة الكيميائية" data-en="Chemical Fertilizers">الأسمدة الكيميائية</span></h3>
+                        <p data-ar="توفر العناصر الأساسية للنباتات مثل النيتروجين (N)، الفوسفور (P)، والبوتاسيوم (K). هذه العناصر ضرورية لنمو النباتات وإنتاج المحاصيل الوفيرة." data-en="Provide essential elements to plants such as Nitrogen (N), Phosphorus (P), and Potassium (K). These elements are necessary for plant growth and abundant crop production.">توفر العناصر الأساسية للنباتات مثل النيتروجين (N)، الفوسفور (P)، والبوتاسيوم (K). هذه العناصر ضرورية لنمو النباتات وإنتاج المحاصيل الوفيرة.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <img src="assets/_المبيدات الكيميائية للمحاصيل.jpg" alt="Pesticides">
+                    <div class="topic-content">
+                        <h3><i class="fas fa-shield-alt"></i> <span data-ar="المبيدات الكيميائية" data-en="Chemical Pesticides">المبيدات الكيميائية</span></h3>
+                        <p data-ar="تستخدم لحماية المحاصيل من الآفات والأمراض. تطور الكيمياء الحديثة مبيدات أكثر أماناً وفعالية مع تقليل الأثر البيئي السلبي." data-en="Used to protect crops from pests and diseases. Modern chemistry develops safer and more effective pesticides while reducing negative environmental impact.">تستخدم لحماية المحاصيل من الآفات والأمراض. تطور الكيمياء الحديثة مبيدات أكثر أماناً وفعالية مع تقليل الأثر البيئي السلبي.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <img src="assets/الهرمونات النباتية.jpg" alt="Plant Hormones">
+                    <div class="topic-content">
+                        <h3><i class="fas fa-atom"></i> <span data-ar="الهرمونات النباتية" data-en="Plant Hormones">الهرمونات النباتية</span></h3>
+                        <p data-ar="مواد كيميائية تتحكم في نمو النباتات وتطورها. تشمل الأوكسينات والجبريلينات التي تساعد في تسريع النمو وزيادة حجم الثمار." data-en="Chemical substances that control plant growth and development. Include auxins and gibberellins that help accelerate growth and increase fruit size.">مواد كيميائية تتحكم في نمو النباتات وتطورها. تشمل الأوكسينات والجبريلينات التي تساعد في تسريع النمو وزيادة حجم الثمار.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h2 class="section-title" data-ar="دور الكيمياء في الزراعة الحديثة" data-en="The Role of Chemistry in Modern Agriculture">دور الكيمياء في الزراعة الحديثة</h2>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <span class="benefit-icon"><i class="fas fa-flask"></i></span>
+                        <div>
+                            <h4 data-ar="تحليل التربة" data-en="Soil Analysis">تحليل التربة</h4>
+                            <p data-ar="معرفة تركيب التربة الكيميائي يساعد في تحديد الأسمدة المناسبة" data-en="Knowing the chemical composition of soil helps determine appropriate fertilizers">معرفة تركيب التربة الكيميائي يساعد في تحديد الأسمدة المناسبة</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon"><i class="fas fa-flask"></i></span>
+                        <div>
+                            <h4 data-ar="تطوير الأسمدة" data-en="Fertilizer Development">تطوير الأسمدة</h4>
+                            <p data-ar="إنتاج أسمدة متطورة تزيد من كفاءة امتصاص النباتات للعناصر الغذائية" data-en="Producing advanced fertilizers that increase plant nutrient absorption efficiency">إنتاج أسمدة متطورة تزيد من كفاءة امتصاص النباتات للعناصر الغذائية</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon"><i class="fas fa-flask"></i></span>
+                        <div>
+                            <h4 data-ar="حماية المحاصيل" data-en="Crop Protection">حماية المحاصيل</h4>
+                            <p data-ar="تطوير مبيدات آمنة وفعالة لحماية المحاصيل من الآفات" data-en="Developing safe and effective pesticides to protect crops from pests">تطوير مبيدات آمنة وفعالة لحماية المحاصيل من الآفات</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon"><i class="fas fa-flask"></i></span>
+                        <div>
+                            <h4 data-ar="تحسين الجودة" data-en="Quality Improvement">تحسين الجودة</h4>
+                            <p data-ar="استخدام المواد الكيميائية لتحسين طعم ولون وحجم المحاصيل" data-en="Using chemicals to improve taste, color and size of crops">استخدام المواد الكيميائية لتحسين طعم ولون وحجم المحاصيل</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chemical-elements">
+                <h2 class="section-title" data-ar="العناصر الكيميائية الأساسية للنباتات" data-en="Essential Chemical Elements for Plants">العناصر الكيميائية الأساسية للنباتات</h2>
+                <div class="elements-grid">
+                    <div class="element-card">
+                        <div class="element-symbol">N</div>
+                        <h4 data-ar="النيتروجين" data-en="Nitrogen">النيتروجين</h4>
+                        <p data-ar="ضروري لنمو الأوراق والبناء الضوئي" data-en="Essential for leaf growth and photosynthesis">ضروري لنمو الأوراق والبناء الضوئي</p>
+                    </div>
+                    <div class="element-card">
+                        <div class="element-symbol">P</div>
+                        <h4 data-ar="الفوسفور" data-en="Phosphorus">الفوسفور</h4>
+                        <p data-ar="مهم لتطوير الجذور والإزهار" data-en="Important for root development and flowering">مهم لتطوير الجذور والإزهار</p>
+                    </div>
+                    <div class="element-card">
+                        <div class="element-symbol">K</div>
+                        <h4 data-ar="البوتاسيوم" data-en="Potassium">البوتاسيوم</h4>
+                        <p data-ar="يعزز المقاومة للأمراض ونقل المواد" data-en="Enhances disease resistance and nutrient transport">يعزز المقاومة للأمراض ونقل المواد</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="applications-section">
+        <div class="container">
+            <h2 class="section-title" data-ar="تقنيات كيميائية حديثة" data-en="Modern Chemical Techniques">تقنيات كيميائية حديثة</h2>
+            <div class="applications-grid">
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="assets/تحليل التربة المتقدم تقنيات كيميائية.jpg" alt="Soil Testing">
+                    </div>
+                    <div class="app-content">
+                        <h3 data-ar="تحليل التربة المتقدم" data-en="Advanced Soil Analysis">تحليل التربة المتقدم</h3>
+                        <p data-ar="استخدام تقنيات كيميائية حديثة لتحليل مكونات التربة وتحديد احتياجاتها من العناصر الغذائية بدقة عالية." data-en="Using modern chemical techniques to analyze soil components and accurately determine nutrient needs.">استخدام تقنيات كيميائية حديثة لتحليل مكونات التربة وتحديد احتياجاتها من العناصر الغذائية بدقة عالية.</p>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="assets/الأسمدة النانوية.jpg" alt="Nano Fertilizers">
+                    </div>
+                    <div class="app-content">
+                        <h3 data-ar="الأسمدة النانوية" data-en="Nano Fertilizers">الأسمدة النانوية</h3>
+                        <p data-ar="تكنولوجيا النانو في الأسمدة تزيد من كفاءة امتصاص النباتات للمغذيات وتقلل من الهدر والتلوث البيئي." data-en="Nanotechnology in fertilizers increases plant nutrient absorption efficiency and reduces waste and environmental pollution.">تكنولوجيا النانو في الأسمدة تزيد من كفاءة امتصاص النباتات للمغذيات وتقلل من الهدر والتلوث البيئي.</p>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="assets/أنظمة الري الذكية.jpg" alt="Smart Irrigation">
+                    </div>
+                    <div class="app-content">
+                        <h3 data-ar="أنظمة الري الذكية" data-en="Smart Irrigation Systems">أنظمة الري الذكية</h3>
+                        <p data-ar="استخدام حساسات كيميائية لقياس رطوبة التربة والتحكم الآلي في الري حسب احتياجات النباتات الفعلية." data-en="Using chemical sensors to measure soil moisture and automatically control irrigation based on actual plant needs.">استخدام حساسات كيميائية لقياس رطوبة التربة والتحكم الآلي في الري حسب احتياجات النباتات الفعلية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulas-section">
+        <div class="container">
+            <h2 class="section-title" data-ar="معادلات كيميائية مهمة" data-en="Important Chemical Equations">معادلات كيميائية مهمة</h2>
+            <div class="formulas-grid">
+                <div class="formula-card">
+                    <div class="formula-title" data-ar="عملية البناء الضوئي" data-en="Photosynthesis">عملية البناء الضوئي</div>
+                    <div class="formula">6CO₂ + 6H₂O + ضوء → C₆H₁₂O₆ + 6O₂</div>
+                    <p data-ar="النباتات تحول ثاني أكسيد الكربون والماء إلى جلوكوز وأكسجين" data-en="Plants convert carbon dioxide and water into glucose and oxygen">النباتات تحول ثاني أكسيد الكربون والماء إلى جلوكوز وأكسجين</p>
+                </div>
+                <div class="formula-card">
+                    <div class="formula-title" data-ar="تثبيت النيتروجين" data-en="Nitrogen Fixation">تثبيت النيتروجين</div>
+                    <div class="formula">N₂ + 8H⁺ + 8e⁻ → 2NH₃ + H₂</div>
+                    <p data-ar="البكتيريا تحول النيتروجين الجوي إلى أمونيا قابلة للاستخدام" data-en="Bacteria convert atmospheric nitrogen into usable ammonia">البكتيريا تحول النيتروجين الجوي إلى أمونيا قابلة للاستخدام</p>
+                </div>
+                <div class="formula-card">
+                    <div class="formula-title" data-ar="تفاعل الأسمدة النيتروجينية" data-en="Nitrogen Fertilizer Reaction">تفاعل الأسمدة النيتروجينية</div>
+                    <div class="formula">NH₃ + HNO₃ → NH₄NO₃</div>
+                    <p data-ar="إنتاج نترات الأمونيوم، أحد أهم الأسمدة الزراعية" data-en="Production of ammonium nitrate, one of the most important agricultural fertilizers">إنتاج نترات الأمونيوم، أحد أهم الأسمدة الزراعية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="safety-tips">
+        <div class="container">
+            <h2 class="section-title" data-ar="نصائح السلامة الكيميائية" data-en="Chemical Safety Tips">نصائح السلامة الكيميائية</h2>
+            <div class="tips-list">
+                <div class="tip-item">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div>
+                        <h4 data-ar="استخدم معدات الوقاية" data-en="Use Protective Equipment">استخدم معدات الوقاية</h4>
+                        <p data-ar="ارتدِ القفازات والنظارات الواقية عند التعامل مع المواد الكيميائية الزراعية." data-en="Wear gloves and safety glasses when handling agricultural chemicals.">ارتدِ القفازات والنظارات الواقية عند التعامل مع المواد الكيميائية الزراعية.</p>
+                    </div>
+                </div>
+                <div class="tip-item">
+                    <i class="fas fa-book-reader"></i>
+                    <div>
+                        <h4 data-ar="اقرأ التعليمات" data-en="Read Instructions">اقرأ التعليمات</h4>
+                        <p data-ar="اقرأ واتبع تعليمات الشركة المصنعة بدقة لتجنب المخاطر الصحية." data-en="Read and follow manufacturer instructions carefully to avoid health risks.">اقرأ واتبع تعليمات الشركة المصنعة بدقة لتجنب المخاطر الصحية.</p>
+                    </div>
+                </div>
+                <div class="tip-item">
+                    <i class="fas fa-wind"></i>
+                    <div>
+                        <h4 data-ar="التهوية الجيدة" data-en="Good Ventilation">التهوية الجيدة</h4>
+                        <p data-ar="تأكد من وجود تهوية كافية عند خلط أو رش المواد الكيميائية." data-en="Ensure adequate ventilation when mixing or spraying chemicals.">تأكد من وجود تهوية كافية عند خلط أو رش المواد الكيميائية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-ar="© 2025 مزرعة العلوم - BioChem Farm. جميع الحقوق محفوظة" data-en="© 2025 BioChem Farm. All Rights Reserved">© 2025 مزرعة العلوم - BioChem Farm. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

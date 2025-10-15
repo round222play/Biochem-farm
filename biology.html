@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأحياء والزراعة - مزرعة العلوم</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo"><i class="fas fa-seedling"></i> <span data-ar="مزرعة العلوم" data-en="BioChem Farm">مزرعة العلوم</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="about.html" data-ar="نبذة عنا" data-en="About Us">نبذة عنا</a></li>
+                <li><a href="biology.html" class="active" data-ar="الأحياء والزراعة" data-en="Biology & Agriculture">الأحياء والزراعة</a></li>
+                <li><a href="chemistry.html" data-ar="الكيمياء والزراعة" data-en="Chemistry & Agriculture">الكيمياء والزراعة</a></li>
+                <li><a href="quiz.html" data-ar="اختبر معلوماتك" data-en="Test Your Knowledge">اختبر معلوماتك</a></li>
+            </ul>
+            <button class="lang-toggle" onclick="toggleLanguage()">
+                <i class="fas fa-globe"></i>
+                <span class="lang-text" data-ar="English" data-en="العربية">English</span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header biology-header">
+        <div class="container">
+            <h1 data-ar="الأحياء والزراعة" data-en="Biology & Agriculture">الأحياء والزراعة</h1>
+            <p data-ar="استكشف دور علم الأحياء في التطور الزراعي" data-en="Explore the role of biology in agricultural development">استكشف دور علم الأحياء في التطور الزراعي</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="intro-box">
+                <h2 data-ar="علم الأحياء الزراعي" data-en="Agricultural Biology">علم الأحياء الزراعي</h2>
+                <p data-ar="علم الأحياء الزراعي هو فرع من علوم الأحياء يدرس الكائنات الحية وعلاقتها بالإنتاج الزراعي. يشمل دراسة النباتات، الميكروبات، الحشرات، وجميع الكائنات التي تؤثر على الزراعة." data-en="Agricultural biology is a branch of biological sciences that studies living organisms and their relationship to agricultural production. It includes the study of plants, microbes, insects, and all organisms that affect agriculture.">علم الأحياء الزراعي هو فرع من علوم الأحياء يدرس الكائنات الحية وعلاقتها بالإنتاج الزراعي. يشمل دراسة النباتات، الميكروبات، الحشرات، وجميع الكائنات التي تؤثر على الزراعة.</p>
+            </div>
+
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <img src="assets/علم النبات.jpg" alt="Plant Biology">
+                    <div class="topic-content">
+                        <h3><i class="fas fa-spa"></i> <span data-ar="علم النبات" data-en="Botany">علم النبات</span></h3>
+                        <p data-ar="دراسة تركيب النباتات ووظائفها ونموها. يساعدنا في فهم كيفية تحسين إنتاج المحاصيل من خلال فهم احتياجات النباتات الأساسية من الضوء، الماء، والمغذيات." data-en="Study of plant structure, functions and growth. It helps us understand how to improve crop production by understanding plants' basic needs for light, water, and nutrients.">دراسة تركيب النباتات ووظائفها ونموها. يساعدنا في فهم كيفية تحسين إنتاج المحاصيل من خلال فهم احتياجات النباتات الأساسية من الضوء، الماء، والمغذيات.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <img src="assets/علم الوراثة.jpg" alt="Genetics">
+                    <div class="topic-content">
+                        <h3><i class="fas fa-dna"></i> <span data-ar="علم الوراثة" data-en="Genetics">علم الوراثة</span></h3>
+                        <p data-ar="يساعد في تطوير أصناف جديدة من المحاصيل ذات صفات محسّنة مثل المقاومة للأمراض، تحمل الجفاف، وزيادة الإنتاجية من خلال التهجين والهندسة الوراثية." data-en="Helps develop new crop varieties with improved traits such as disease resistance, drought tolerance, and increased productivity through hybridization and genetic engineering.">يساعد في تطوير أصناف جديدة من المحاصيل ذات صفات محسّنة مثل المقاومة للأمراض، تحمل الجفاف، وزيادة الإنتاجية من خلال التهجين والهندسة الوراثية.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <img src="assets/علم الأحياء الدقيقة.jpg" alt="Microbiology">
+                    <div class="topic-content">
+                        <h3><i class="fas fa-virus"></i> <span data-ar="علم الأحياء الدقيقة" data-en="Microbiology">علم الأحياء الدقيقة</span></h3>
+                        <p data-ar="دراسة البكتيريا والفطريات المفيدة للتربة. تساعد الميكروبات في تثبيت النيتروجين، تحليل المواد العضوية، وتحسين خصوبة التربة بشكل طبيعي." data-en="Study of bacteria and fungi beneficial to soil. Microbes help fix nitrogen, decompose organic matter, and naturally improve soil fertility.">دراسة البكتيريا والفطريات المفيدة للتربة. تساعد الميكروبات في تثبيت النيتروجين، تحليل المواد العضوية، وتحسين خصوبة التربة بشكل طبيعي.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <img src="assets/علم البيئة.jpg" alt="Ecology">
+                    <div class="topic-content">
+                        <h3><i class="fas fa-tree"></i> <span data-ar="علم البيئة" data-en="Ecology">علم البيئة</span></h3>
+                        <p data-ar="دراسة التفاعلات بين الكائنات الحية والبيئة. يساعد في تطوير أنظمة زراعية مستدامة تحافظ على التوازن البيئي وتحمي التنوع البيولوجي." data-en="Study of interactions between organisms and the environment. Helps develop sustainable agricultural systems that maintain ecological balance and protect biodiversity.">دراسة التفاعلات بين الكائنات الحية والبيئة. يساعد في تطوير أنظمة زراعية مستدامة تحافظ على التوازن البيئي وتحمي التنوع البيولوجي.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h2 class="section-title" data-ar="فوائد علم الأحياء في الزراعة" data-en="Benefits of Biology in Agriculture">فوائد علم الأحياء في الزراعة</h2>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <span class="benefit-icon"><i class="fas fa-check-circle"></i></span>
+                        <div>
+                            <h4 data-ar="تحسين الإنتاجية" data-en="Improved Productivity">تحسين الإنتاجية</h4>
+                            <p data-ar="زيادة كمية المحاصيل من خلال فهم احتياجات النباتات" data-en="Increase crop quantity by understanding plant needs">زيادة كمية المحاصيل من خلال فهم احتياجات النباتات</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon"><i class="fas fa-check-circle"></i></span>
+                        <div>
+                            <h4 data-ar="مكافحة الآفات الحيوية" data-en="Biological Pest Control">مكافحة الآفات الحيوية</h4>
+                            <p data-ar="استخدام الأعداء الطبيعيين للآفات بدلاً من المبيدات الكيميائية" data-en="Using natural enemies of pests instead of chemical pesticides">استخدام الأعداء الطبيعيين للآفات بدلاً من المبيدات الكيميائية</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon"><i class="fas fa-check-circle"></i></span>
+                        <div>
+                            <h4 data-ar="تحسين جودة المحاصيل" data-en="Improved Crop Quality">تحسين جودة المحاصيل</h4>
+                            <p data-ar="إنتاج محاصيل ذات قيمة غذائية أعلى ومقاومة للأمراض" data-en="Producing crops with higher nutritional value and disease resistance">إنتاج محاصيل ذات قيمة غذائية أعلى ومقاومة للأمراض</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon"><i class="fas fa-check-circle"></i></span>
+                        <div>
+                            <h4 data-ar="الزراعة المستدامة" data-en="Sustainable Agriculture">الزراعة المستدامة</h4>
+                            <p data-ar="الحفاظ على الموارد الطبيعية للأجيال القادمة" data-en="Preserving natural resources for future generations">الحفاظ على الموارد الطبيعية للأجيال القادمة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="applications-section">
+        <div class="container">
+            <h2 class="section-title" data-ar="تطبيقات عملية في الزراعة" data-en="Practical Applications in Agriculture">تطبيقات عملية في الزراعة</h2>
+            <div class="applications-grid">
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="assets/زراعة الأنسجة النباتية.jpg" alt="Tissue Culture">
+                    </div>
+                    <div class="app-content">
+                        <h3 data-ar="زراعة الأنسجة النباتية" data-en="Plant Tissue Culture">زراعة الأنسجة النباتية</h3>
+                        <p data-ar="تقنية حديثة لإكثار النباتات في المختبر، تساعد في إنتاج نباتات خالية من الأمراض وبكميات كبيرة في وقت قصير." data-en="A modern technique for plant propagation in the laboratory, helps produce disease-free plants in large quantities in a short time.">تقنية حديثة لإكثار النباتات في المختبر، تساعد في إنتاج نباتات خالية من الأمراض وبكميات كبيرة في وقت قصير.</p>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="assets/الزراعة المائية.jpg" alt="Hydroponics">
+                    </div>
+                    <div class="app-content">
+                        <h3 data-ar="الزراعة المائية" data-en="Hydroponics">الزراعة المائية</h3>
+                        <p data-ar="نظام زراعي بدون تربة يعتمد على المحاليل المغذية، يوفر الماء ويزيد الإنتاجية في المساحات الصغيرة." data-en="A soil-less farming system that relies on nutrient solutions, saves water and increases productivity in small spaces.">نظام زراعي بدون تربة يعتمد على المحاليل المغذية، يوفر الماء ويزيد الإنتاجية في المساحات الصغيرة.</p>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-image">
+                        <img src="assets/المبيدات الحيوية.jpg" alt="Biopesticides">
+                    </div>
+                    <div class="app-content">
+                        <h3 data-ar="المبيدات الحيوية" data-en="Biopesticides">المبيدات الحيوية</h3>
+                        <p data-ar="استخدام الكائنات الحية الدقيقة لمكافحة الآفات، بديل آمن وصديق للبيئة عن المبيدات الكيميائية." data-en="Using microorganisms to control pests, a safe and environmentally friendly alternative to chemical pesticides.">استخدام الكائنات الحية الدقيقة لمكافحة الآفات، بديل آمن وصديق للبيئة عن المبيدات الكيميائية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="did-you-know">
+        <div class="container">
+            <h2 class="section-title" data-ar="هل تعلم؟" data-en="Did You Know?">هل تعلم؟</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-icon"><i class="fas fa-seedling"></i></div>
+                    <p data-ar="يمكن لنبات واحد من الذرة إنتاج ما يصل إلى 1000 حبة في السنبلة الواحدة!" data-en="A single corn plant can produce up to 1000 kernels in one ear!">يمكن لنبات واحد من الذرة إنتاج ما يصل إلى 1000 حبة في السنبلة الواحدة!</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon"><i class="fas fa-bacteria"></i></div>
+                    <p data-ar="في ملعقة صغيرة من التربة الخصبة، يوجد أكثر من مليار بكتيريا مفيدة!" data-en="In a teaspoon of fertile soil, there are more than a billion beneficial bacteria!">في ملعقة صغيرة من التربة الخصبة، يوجد أكثر من مليار بكتيريا مفيدة!</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon"><i class="fas fa-dna"></i></div>
+                    <p data-ar="99% من الحمض النووي للطماطم مطابق للحمض النووي البشري!" data-en="99% of tomato DNA is identical to human DNA!">99% من الحمض النووي للطماطم مطابق للحمض النووي البشري!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-ar="© 2024 مزرعة العلوم - BioChem Farm. جميع الحقوق محفوظة" data-en="© 2024 BioChem Farm. All Rights Reserved">© 2024 مزرعة العلوم - BioChem Farm. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
